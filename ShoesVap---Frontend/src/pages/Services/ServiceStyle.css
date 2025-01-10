@@ -60,10 +60,30 @@
 .accordion-content {
   padding: 15px;
   border-top: 1px solid #cccccc;
-  display: none; 
+  display: none;
   font-size: 1.2em;
   color: #2d3852;
   font-weight: bold;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.content-title {
+  flex: 1;
+  text-align: left;
+  font-weight: normal;
+}
+
+.content-price {
+  flex: 0.3;
+  text-align: right;
+  font-weight: bold;
+  color: #76d63f;
 }
 
 
@@ -77,7 +97,7 @@
   }
 
   .accordion-content {
-    font-size: 1em; 
+    font-size: 1.2em; 
   }
   
   .accordion {

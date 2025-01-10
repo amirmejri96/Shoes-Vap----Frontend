@@ -9,10 +9,10 @@ const Service = () => {
   };
 
   const data = [
-    { title: "Chaussure", content: "Nettoyage Basket Simple .....................15Dt", content1:"Nettoyage Bottine ...................................25Dt", content2:"Nettoyage Haut De Gamme ................25DT" },
-    { title: "Sac", content: "Sac Simple .................................................20Dt", content1:"Sac Haut De Gamme .............................25Dt" },
-    { title: "Moto", content: "Nettoyage Gilet Moto ..............................20Dt", content1:"Casque Moto ...............................................15Dt", content2:"Gant Moto ....................................................5Dt" },
-    { title: "Voiture", content: "Chaise Voiture ..............................................25Dt", content1:"Chaise enfant ................................................20Dt", content2:"MaxiCosi .........................................................20Dt" },
+    { title: "Chaussure", content: "Nettoyage Basket Simple .....................15Dt", content1:"Nettoyage Bottine ...................................25Dt", content2:"Nettoyage Haut De Gamme ................25Dt" },
+    { title: "Sac", content: "Sac Simple .....................20Dt", content1:"Sac Haut De Gamme ...................................25Dt" },
+    { title: "Moto", content: "Nettoyage Gilet Moto .....................20Dt", content1:"Casque Moto ...................................15Dt", content2:"Gant Moto ................5Dt" },
+    { title: "Voiture", content: "Chaise Voiture .....................25Dt", content1:"Chaise enfant ...................................20Dt", content2:"MaxiCosi ................20Dt" },
   ];
 
   return (
@@ -29,12 +29,35 @@ const Service = () => {
               &#9654;
             </span>
           </div>
-          <div
+          {/* <div
             className="accordion-content"
             style={{ display: activeIndex === index ? 'block' : 'none' }}
           >
             <p>{item.content} <br/> <br/> {item.content1} <br/> <br/> {item.content2}</p>
-          </div>
+          </div> */}
+
+<div
+  className="accordion-content"
+  style={{ display: activeIndex === index ? 'block' : 'none' }}
+>
+  <div className="content-row">
+    <span className="content-title">{item.content.split(".....................")[0]}</span>
+    <span className="content-price">{item.content.split(".....................")[1]}</span>
+  </div>
+  {item.content1 && (
+    <div className="content-row">
+      <span className="content-title">{item.content1.split("...................................")[0]}</span>
+      <span className="content-price">{item.content1.split("...................................")[1]}</span>
+    </div>
+  )}
+  {item.content2 && (
+    <div className="content-row">
+      <span className="content-title">{item.content2.split("................")[0]}</span>
+      <span className="content-price">{item.content2.split("................")[1]}</span>
+    </div>
+  )}
+</div>
+
         </div>
       ))}
 
