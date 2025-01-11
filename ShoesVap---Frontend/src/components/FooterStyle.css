@@ -1,5 +1,5 @@
 .footer {
-    background-color: #333;
+    background-color: #2d3852;
     color: #fff;
     text-align: center;
     padding: 20px 10px;
@@ -9,6 +9,7 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
+    color: #76d63f;
 }
 
 .footer-links {
@@ -26,7 +27,7 @@
 }
 
 .footer-links a {
-    color: #fff;
+    color: #76d63f;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;

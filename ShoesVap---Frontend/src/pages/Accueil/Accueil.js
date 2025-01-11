@@ -6,7 +6,7 @@ const Accueil = () => {
     <div className='main-accueil'>
       <header>
     <h1>Bienvenue à <br /> Shoes Vap</h1>
-    <h4 style={{ fontFamily: 'sans-serif', fontWeight: 'bold', color: '#2d3852', textShadow:'2px 2px 4px rgba(250, 250, 250, 0.5)' }}>
+    <h4 style={{ fontSize:'2em', fontFamily: 'sans-serif', fontWeight: '300', color: '#2d3852', textShadow:'2px 2px 4px rgba(250, 250, 250, 0.5)' }}>
         Service de nettoyage à la vapeur professionnel
     </h4>
     <h3>Le soin parfait pour vos chaussures !</h3>
