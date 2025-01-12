@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../../../public/assets/bg.jpg');
+  background-image: url('../../../public/assets/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,8 +16,7 @@
   flex-direction: row;
   width: 90%;
   max-width: 1200px;
-  /* background-color: rgba(213, 208, 208, 0.7); */
-  background-color: #76d63f;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   color: white;
@@ -31,8 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: rgba(213, 208, 208, 0.7); */
-  background-color: #76d63f;
+  background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -40,9 +38,7 @@
   margin: 0;
   line-height: 1.6;
   color: #2d3852;
-  /* color: black;
-  text-shadow: 2px 2px 4px rgba(4, 4, 4, 0.5); */
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
   
 .logo-box {
@@ -54,8 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(213, 208, 208, 0.7); */
-  background-color: #76d63f;
+  background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -87,10 +82,11 @@
 @media (max-width: 480px) {
   .InfoBox-left p {
     font-size: 0.85rem;
-    line-height: 1.5; 
+    line-height: 1.5;
   }
-  
+
   .logo-box img {
     width: 50%;
   }
 }
+

@@ -7,10 +7,10 @@ const About = () => {
         <div className="InfoBox">
         <div className="InfoBox-left">
           <div className="logo-box">
-            <img style={{width:'40%'}} src='../../../assets/logo sghir.png' alt='Logo Box' />
+            <img style={{width:'20%'}} src='../../../assets/logo2.jpg' alt='Logo Box' />
           </div>
           <p>
-          Shoes Vap est le spécialiste du nettoyage de <br/> 
+          ShoesVap est le spécialiste du nettoyage de <br/> 
           chaussures à la vapeur à Tunis. Notre équipe <br/>
           expérimentée et passionnée utilise des techniques <br/>
           de nettoyage avancées pour redonner vie à vos <br/>

@@ -4,7 +4,7 @@ import './BoutiqueStyle.css'
 const Boutique = () => {
   return (
     <div className="Hero-2">
-      <h1 style={{textAlign:'center', marginTop:'30px'}} >Bienvenue dans notre <br/> Boutique</h1>
+      <h1 style={{textAlign:'center', marginTop:'30px', color:'white'}} >Bienvenue dans notre <br/> Boutique</h1>
     <div className="containers">
         <div className="boxs">
             <img src="https://via.placeholder.com/250x200" alt="Produit 1"/>

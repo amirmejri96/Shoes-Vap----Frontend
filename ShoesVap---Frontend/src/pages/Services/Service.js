@@ -29,12 +29,6 @@ const Service = () => {
               &#9654;
             </span>
           </div>
-          {/* <div
-            className="accordion-content"
-            style={{ display: activeIndex === index ? 'block' : 'none' }}
-          >
-            <p>{item.content} <br/> <br/> {item.content1} <br/> <br/> {item.content2}</p>
-          </div> */}
 
 <div
   className="accordion-content"

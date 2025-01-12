@@ -1,5 +1,5 @@
 .Hero-2 {
-    background-image: url('../../../public/assets/bg.jpg');
+    background-image: url('../../../public/assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +19,7 @@
     margin-top: 70px;
 }
 .boxs {
-    background-color: #76d63f;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
     width: 100%;

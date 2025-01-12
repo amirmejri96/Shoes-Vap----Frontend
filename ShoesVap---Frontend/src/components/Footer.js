@@ -8,9 +8,11 @@ const Footer = () => {
     <div className="footer-content">
         <p>Contactez-nous :</p>
         <ul className="footer-links">
-            <li><a href="mailto:all.doufeni@gmail.com"><i className="fas fa-envelope"></i>all.doufeni@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/shoesvap2025"><i className="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.facebook.com/shoesvap2025"><i className="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="mailto:shoesvap@gmail.com"><i className="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.instagram.com/shoesvap2025"><i className="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/shoesvap2025"><i className="fab fa-facebook"></i></a></li>
+            <li><a href="https://wa.me/21657444160" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.google.com/maps?q=your+location+address" rel="noopener noreferrer"><i className="fas fa-map-marker-alt"></i></a></li>
         </ul>
     </div>
 </footer>
