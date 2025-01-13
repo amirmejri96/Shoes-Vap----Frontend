@@ -37,25 +37,24 @@ h3 {
 }
 
 .video-container {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 30px auto;
     position: relative;
-    padding-bottom: 56.25%;
-    height: 58vh;
+    height: auto;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+.video-container video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
+
+
 
 @media (max-width: 768px) {
     h1 {
@@ -81,6 +80,6 @@ h3 {
     }
 
     .video-container {
-        height: 47vh;
+        height: auto;
     }
 }
