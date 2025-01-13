@@ -1,26 +1,3 @@
-// import React from 'react';
-// import './AccueilStyle.css';
-
-// const Accueil = () => {
-//   return (
-//     <div className='main-accueil'>
-//       <header>
-//         <h1>Bienvenue à ShoesVap</h1>
-//         <h4 style={{ fontSize:'2em', fontFamily: 'sans-serif', fontWeight: '300', color: 'white', textShadow:'2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
-//           Service de nettoyage à la vapeur professionnel
-//         </h4>
-//         <h3>La solution parfaite pour vos chaussures !</h3>
-//       </header>
-//       <div className="video-container">
-//         <video src='/assets/vidéo.mp4' title='ShoesVap'></video>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Accueil;
-
-
 import React, { useRef } from 'react';
 import './AccueilStyle.css';
 

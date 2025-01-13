@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #2d3852; */
     background-color: white;
     padding: 10px 20px;
     color: white;
@@ -28,7 +27,7 @@
 }
 
 .navbar ul li a:hover {
-    color: #f4b400;
+    color: #76d63f;
 }
 
 .menu-toggle {
