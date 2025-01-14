@@ -230,7 +230,7 @@ background-color: #2d3852;
 
 @media (max-width: 1024px) {
   .service{
-    max-height: 320vh;
+    min-height: 270vh;
   }
 }
 
