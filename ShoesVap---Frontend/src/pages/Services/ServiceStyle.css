@@ -227,3 +227,11 @@ background-color: #2d3852;
   max-height: 120vh;
 }
 }
+
+@media (max-width: 1024px) {
+  .service{
+    max-height: 320vh;
+  }
+}
+
+

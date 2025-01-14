@@ -1,37 +1,30 @@
-import React from 'react'
-import './AboutStyle.css'
+import React from 'react';
+import './AboutStyle.css';
 
 const About = () => {
   return (
-    <div className='Hero-1'>
-        <div className="InfoBox">
-        <div className="InfoBox-left">
+    <div className="hero">
+      <div className="info-box">
+        <div className="info-box-left">
           <div className="logo-box">
-            <img style={{width:'20%'}} src='../../../assets/logo2.jpg' alt='Logo Box' />
+            <img src="/assets/logo2.jpg" alt="Logo" />
           </div>
           <p>
-          ShoesVap est le spécialiste du nettoyage de <br/> 
-          chaussures à la vapeur à Tunis. Notre équipe <br/>
-          expérimentée et passionnée utilise des techniques <br/>
-          de nettoyage avancées pour redonner vie à vos <br/>
-          chaussures préférées. Nous comprenons <br/>
-          l'importance de chaussures propres et bien <br/>
-          entretenues, c'est pourquoi nous nous engageons <br/>
-          à fournir un service rapide, efficace et fiable. Que <br/>
-          ce soit pour éliminer les taches tenaces, éliminer <br/>
-          les mauvaises odeurs ou redonner de l'éclat à vos <br/>
-          chaussures, nous sommes là pour vous aider. <br/>
-          Parcourez notre site pour découvrir nos services <br/>
-          de nettoyage à la vapeur et les forfaits que <br/>
-           nous proposons.
+            ShoesVap est le spécialiste du nettoyage de chaussures à la vapeur à Tunis. 
+            Notre équipe expérimentée et passionnée utilise des techniques avancées pour 
+            redonner vie à vos chaussures préférées. Nous comprenons l'importance de chaussures 
+            propres et bien entretenues, c'est pourquoi nous nous engageons à fournir un service 
+            rapide, efficace et fiable. Que ce soit pour éliminer les taches tenaces, éliminer 
+            les mauvaises odeurs ou redonner de l'éclat à vos chaussures. 
+            Parcourez notre site pour découvrir nos services de nettoyage à la vapeur et les forfaits que nous proposons.
           </p>
         </div>
-        <div className="InfoBox-right">
-          <img src='../../../assets/4.jpg' alt='Illustration' />
+        <div className="info-box-right">
+          <img src="/assets/about.jpg" alt="Illustration" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
