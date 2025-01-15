@@ -51,7 +51,6 @@
   overflow-wrap: break-word;
   hyphens: auto;
   width: 95%;
-
 }
 
 .info-box-right {
@@ -66,7 +65,6 @@
   border-radius: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .info-box {
     flex-direction: column;
@@ -127,3 +125,7 @@
     width: 100px;
   }
 }
+
+
+
+

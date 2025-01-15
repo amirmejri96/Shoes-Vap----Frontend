@@ -61,14 +61,14 @@ const Service = () => {
   <div className="card">
       <img src="/assets/photo1.jpg" alt="Image_1"/>
       <h2>Traitement Sur Place</h2>
-      <p>Le traitement dure une heure. Vous déposez votre produit <br/> sur place et vous le <br/> récupérez une heure <br/> plus tard.</p>
+      <p>Le traitement dure une heure. Vous déposez votre produit sur place et vous le récupérez une heure plus tard.</p>
       <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
   </div>
 
   <div className="card">
       <img src="/assets/photo2.png" alt="Image_2"/>
       <h2>Retrait et Livraison</h2>
-      <p>Vous pouvez envoyer votre produit en livraison : nous le récupérons et vous le renvoyons directement chez vous.</p>
+      <p>Vous pouvez envoyer votre produit en livraison : nous le récupérons et vous le renvoyons directement chez <br/> vous.</p>
       <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
   </div>
 
