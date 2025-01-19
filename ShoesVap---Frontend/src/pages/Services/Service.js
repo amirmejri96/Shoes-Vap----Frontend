@@ -59,7 +59,7 @@ const Service = () => {
 
 <div className="cards-container">
   <div className="card">
-      <img src="/assets/photo2.png" alt="Image_1"/>
+      <img src="/assets/photo2.jpg" alt="Image_1"/>
       <h2>Traitement Sur Place</h2>
       <p>Le traitement dure une heure. Vous déposez votre produit sur place et vous le récupérez une heure plus tard.</p>
       <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
