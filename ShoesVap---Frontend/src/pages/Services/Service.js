@@ -61,14 +61,17 @@ const Service = () => {
   <div className="card">
       <img src="/assets/photo1.png" alt="Image_1"/>
       <h2>Traitement Sur Place</h2>
-      <p>Le traitement dure une heure. Vous déposez votre produit sur place et vous le récupérez une heure plus tard.</p>
+      <p>Préférez un passage rapide à notre atelier ? <br/>
+         Profitez d'un nettoyage professionnel immédiat grâce à nos équipements modernes et notre <br/> expertise.</p>
       <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
   </div>
 
   <div className="card">
       <img src="/assets/photo2.png" alt="Image_2"/>
       <h2>Retrait et Livraison</h2>
-      <p>Vous pouvez envoyer votre produit en livraison : nous le récupérons et vous le renvoyons directement chez <br/> vous.</p>
+      <p>Simplifiez-vous la vie avec un service de récupération et de livraison.
+         Shoesvap nettoie vos chaussures avec soin et vous les retourne directement
+         chez vous ou à votre bureau, sans effort de votre part.</p>
       <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
   </div>
 
