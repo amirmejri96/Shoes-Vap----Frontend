@@ -36,37 +36,31 @@
 .boxs .description {
     padding: 15px;
 }
-.boxs .description h3 {
+
+.boxs .description a {
+    text-decoration: none;
+}
+
+.boxs .description a h3 {
     font-size: 18px;
     margin: 0 0 10px;
     color: #2d3852;
 }
+
 .boxs .description p {
     font-size: 14px;
     line-height: 1.3rem;
     margin: 0 0 15px;
     color: #2d3852;
-    text-align: start;
-}
-
-.boxs .description button {
-    background-color: #76d63f;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #2d3852;
-}
-
-.boxs .description button a {
-    color: #2d3852;
-    text-decoration: none;
+    text-align: center;
 }
 
 .boxs .price {
     font-size: 16px;
     font-weight: bold;
     color: #2d3852;
-    margin-bottom: 15px;
-    text-align: start;
+    margin-top: 30px;
+    text-align: center;
 }
 @media (min-width: 768px) {
     .containers {
@@ -114,3 +108,4 @@
       height: auto;
     }
 }
+
