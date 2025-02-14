@@ -17,7 +17,7 @@ function Navbar() {
                 <li><a href="/">Accueil</a></li>
                 <li><a href="/à-propos">À propos</a></li>
                 <li><a href="/services">Services</a></li>
-                {/* <li><a href="/boutique">Boutique</a></li> */}
+                <li><a href="/boutique">Boutique</a></li>
             </ul>
             <div className="menu-toggle" onClick={toggleMenu}>
                 <span></span>

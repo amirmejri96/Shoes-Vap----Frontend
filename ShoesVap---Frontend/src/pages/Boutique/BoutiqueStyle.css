@@ -29,7 +29,7 @@
     overflow: hidden;
 }
 .boxs img {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: cover;
 }
@@ -43,14 +43,30 @@
 }
 .boxs .description p {
     font-size: 14px;
+    line-height: 1.3rem;
     margin: 0 0 15px;
     color: #2d3852;
+    text-align: start;
 }
+
+.boxs .description button {
+    background-color: #76d63f;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2d3852;
+}
+
+.boxs .description button a {
+    color: #2d3852;
+    text-decoration: none;
+}
+
 .boxs .price {
     font-size: 16px;
     font-weight: bold;
     color: #2d3852;
     margin-bottom: 15px;
+    text-align: start;
 }
 @media (min-width: 768px) {
     .containers {
@@ -95,6 +111,6 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
     .Hero-2 {
-      height: 110vh;
+      height: auto;
     }
 }
