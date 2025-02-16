@@ -37,11 +37,7 @@
     padding: 15px;
 }
 
-.boxs .description a {
-    text-decoration: none;
-}
-
-.boxs .description a h3 {
+.boxs .description h3 {
     font-size: 18px;
     margin: 0 0 10px;
     color: #2d3852;
@@ -62,6 +58,24 @@
     margin-top: 30px;
     text-align: center;
 }
+
+.boxs a {
+    color: #2d3852;
+}
+
+.boxs a button {
+    background-color: #76d63f;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1.5rem 0;
+    color: #2d3852;
+}
+
+.boxs a button:hover {
+    cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
     .containers {
         gap: 30px;
