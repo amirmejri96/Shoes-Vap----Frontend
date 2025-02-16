@@ -5,7 +5,7 @@ const Foam = () => {
   return (
     <div className='shampo'>
         <div className='images'>
-            <img src='' alt='Foam_1' />
+            <img src='../../../assets/FOAM.jpg' alt='Foam_1' />
             <img src='' alt='Foam_2' />
             <img src='' alt='Foam_3' />
         </div>

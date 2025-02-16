@@ -20,6 +20,11 @@
     padding: 4rem 0;
 }
 
+.shampo .images img {
+    width: 15%;
+    border-radius: 20px;
+}
+
 .shampo h2 {
     text-align: center;
     font-size: 2rem;
@@ -125,6 +130,11 @@
     flex-wrap: wrap;
 }
 
+.shampo .images-pack img {
+    width: 15%;
+    border-radius: 20px;
+}
+
 @media (max-width:600px) {
     .shampo .images {
         flex-direction: column;
@@ -154,4 +164,23 @@
     .shampo .images-pack {
         flex-direction: column;
     }
+
+    .shampo .images-pack img {
+        width: 60%;
+    }
+
+    .shampo .images img {
+        width: 60%;
+    }
+}
+
+@media (min-width:860px) and (max-width:1024px) {
+    .shampo .images img {
+        width: 20%;
+    }
+
+    .shampo .images-pack img {
+        width: 20%;
+    }
+
 }

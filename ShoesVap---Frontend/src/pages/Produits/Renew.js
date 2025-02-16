@@ -4,7 +4,7 @@ const Renew = () => {
   return (
     <div className='shampo'>
         <div className='images'>
-            <img src='' alt='White_Renew_1' />
+            <img src='../../../assets/WHITE.jpg' alt='White_Renew_1' />
             <img src='' alt='White_Renew_2' />
             <img src='' alt='White_Renew_3' />
         </div>

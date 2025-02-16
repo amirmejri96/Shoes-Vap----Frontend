@@ -4,11 +4,11 @@ const Pack = () => {
   return (
     <div className='shampo'>
         <div className='images-pack'>
-            <img src='' alt='Pack_1' />
-            <img src='' alt='Pack_2' />
-            <img src='' alt='Pack_3' />
-            <img src='' alt='Pack_4' />
-            <img src='' alt='Pack_5' />
+            <img src='../../../assets/PACK NEW.jpg' alt='Pack_1' />
+            <img src='../../../assets/SHAMPO.jpg' alt='Pack_2' />
+            <img src='../../../assets/FOAM.jpg' alt='Pack_3' />
+            <img src='../../../assets/WHITE.jpg' alt='Pack_4' />
+            <img src='../../../assets/DUO.jpg' alt='Pack_5' />
         </div>
 
         <h2>Pack Total Care Shoesvap</h2>

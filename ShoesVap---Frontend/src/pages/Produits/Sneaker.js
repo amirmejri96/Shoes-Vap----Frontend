@@ -4,7 +4,7 @@ const Sneaker = () => {
   return (
     <div className='shampo'>
         <div className='images'>
-            <img src='' alt='Sneakers_Deo_1' />
+            <img src='../../../assets/DUO.jpg' alt='Sneakers_Deo_1' />
             <img src='' alt='Sneakers_Deo_2' />
             <img src='' alt='Sneakers_Deo_3' />
         </div>

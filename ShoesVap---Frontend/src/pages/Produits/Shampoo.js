@@ -4,7 +4,7 @@ const Shampoo = () => {
   return (
     <div className='shampo'>
         <div className='images'>
-            <img src='' alt='Shampoo_1' />
+            <img src='../../../assets/SHAMPO.jpg' alt='Shampoo_1' />
             <img src='' alt='Shampoo_2' />
             <img src='' alt='Shampoo_3' />
         </div>
