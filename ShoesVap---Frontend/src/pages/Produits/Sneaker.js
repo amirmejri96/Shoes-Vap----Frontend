@@ -5,8 +5,8 @@ const Sneaker = () => {
     <div className='shampo'>
         <div className='images'>
             <img src='../../../assets/DUO.jpg' alt='Sneakers_Deo_1' />
-            <img src='' alt='Sneakers_Deo_2' />
-            <img src='' alt='Sneakers_Deo_3' />
+            {/* <img src='' alt='Sneakers_Deo_2' />
+            <img src='' alt='Sneakers_Deo_3' /> */}
         </div>
 
         <h2>Sneakers Deo Shoesvap</h2>

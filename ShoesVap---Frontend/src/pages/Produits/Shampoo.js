@@ -5,8 +5,8 @@ const Shampoo = () => {
     <div className='shampo'>
         <div className='images'>
             <img src='../../../assets/SHAMPO.jpg' alt='Shampoo_1' />
-            <img src='' alt='Shampoo_2' />
-            <img src='' alt='Shampoo_3' />
+            {/* <img src='' alt='Shampoo_2' />
+            <img src='' alt='Shampoo_3' /> */}
         </div>
 
         <h2>Shampoo Shoesvap</h2>

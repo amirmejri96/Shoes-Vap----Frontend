@@ -56,6 +56,46 @@ const Boutique = () => {
                         <div><a href='https://www.facebook.com/messages/t/146083786054011'><button>Commander</button></a></div>
                     </div>
                 </div>
+                <div className="boxs">
+                    <img src="../../../assets/anti-plis.jpg" alt="Produit 4" />
+                    <div className="description">
+                        <h3>Anti-Plis pour Chaussures</h3>
+                        <p>Protégez vos chaussures préférées.</p>
+                        <div className="price"><span style={{textDecoration:"line-through", marginRight:'10px'}}>15 TND</span><span>12 TND</span></div>
+                        <a href='/anti-plis'><button>Plus d'informations</button></a>
+                        <div><a href='https://www.facebook.com/messages/t/146083786054011'><button>Commander</button></a></div>
+                    </div>
+                </div>
+                <div className="boxs">
+                    <img src="../../../assets/antiglissoir.jpg" alt="Produit 4" />
+                    <div className="description">
+                        <h3>Anti-Glissoires </h3>
+                        <p>Confort et Maintien Parfait pour Vos Chaussures.</p>
+                        <div className="price"><span style={{textDecoration:"line-through", marginRight:'10px'}}>10 TND</span><span>7 TND</span></div>
+                        <a href='/anti-glissoire'><button>Plus d'informations</button></a>
+                        <div><a href='https://www.facebook.com/messages/t/146083786054011'><button>Commander</button></a></div>
+                    </div>
+                </div>
+                <div className="boxs">
+                    <img src="../../../assets/lacets-bleu-marine.jpg" alt="Produit 4" />
+                    <div className="description">
+                        <h3>Lacets en Coton 1M</h3>
+                        <p>Élégance, résistance et confort.</p>
+                        <div className="price"><span style={{textDecoration:"line-through", marginRight:'10px'}}>8 TND</span><span>6 TND</span></div>
+                        <a href='/lacets'><button>Plus d'informations</button></a>
+                        <div><a href='https://www.facebook.com/messages/t/146083786054011'><button>Commander</button></a></div>
+                    </div>
+                </div>
+                <div className="boxs">
+                    <img src="../../../assets/semelle.jpg" alt="Produit 4" />
+                    <div className="description">
+                        <h3>Semelles Orthopédiques </h3>
+                        <p>Confort et Soutien pour Vos Pieds.</p>
+                        <div className="price"><span style={{textDecoration:"line-through", marginRight:'10px'}}>20 TND</span><span>15 TND</span></div>
+                        <a href='/semelles'><button>Plus d'informations</button></a>
+                        <div><a href='https://www.facebook.com/messages/t/146083786054011'><button>Commander</button></a></div>
+                    </div>
+                </div>
             </div>
 
         </div>

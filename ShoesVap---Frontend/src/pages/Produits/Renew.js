@@ -5,8 +5,8 @@ const Renew = () => {
     <div className='shampo'>
         <div className='images'>
             <img src='../../../assets/WHITE.jpg' alt='White_Renew_1' />
-            <img src='' alt='White_Renew_2' />
-            <img src='' alt='White_Renew_3' />
+            {/* <img src='' alt='White_Renew_2' />
+            <img src='' alt='White_Renew_3' /> */}
         </div>
 
         <h2>White Renew Shoesvap</h2>

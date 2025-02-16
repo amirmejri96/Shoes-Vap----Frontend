@@ -11,6 +11,10 @@ import Foam from './pages/Produits/Foam';
 import Renew from './pages/Produits/Renew';
 import Sneaker from './pages/Produits/Sneaker';
 import Pack from './pages/Produits/Pack'
+import AntiPlis from './pages/Produits/AntiPlis';
+import AntiGlissoire from './pages/Produits/AntiGlissoire';
+import Lacets from './pages/Produits/Lacets';
+import Semelle from './pages/Produits/Semelle';
 
 
 
@@ -30,6 +34,11 @@ function App() {
         <Route path='/white-renew' element={<Renew/>} />
         <Route path='/sneakers-deo' element={<Sneaker/>} />
         <Route path='/pack' element={<Pack/>} />
+        <Route path='/anti-plis' element={<AntiPlis/>} />
+        <Route path='/anti-glissoire' element={<AntiGlissoire/>} />
+        <Route path='/lacets' element={<Lacets/>} />
+        <Route path='/semelles' element={<Semelle/>} />
+        
       </Routes>
       <Footer/>
     </div>
