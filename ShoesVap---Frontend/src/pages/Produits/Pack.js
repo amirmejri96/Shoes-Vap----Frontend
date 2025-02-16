@@ -45,6 +45,10 @@ const Pack = () => {
             <p>39 TND</p>
         </div>
 
+        <div className='commander'>
+          <button><a href='https://wa.me/21657244160'>Commander</a></button>
+        </div>
+
     </div>
   )
 }

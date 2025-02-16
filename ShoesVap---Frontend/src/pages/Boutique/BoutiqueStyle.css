@@ -63,12 +63,8 @@
     color: #2d3852;
 }
 
-.boxs a button {
-    background-color: #76d63f;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 2rem 1rem 0 0;
-    color: #2d3852;
+.boxs a {
+    text-decoration: none;
 }
 
 .boxs a button:hover {

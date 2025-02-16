@@ -63,7 +63,7 @@ const Service = () => {
       <h2>Traitement Sur Place</h2>
       <p>Préférez un passage rapide à notre atelier ? <br/>
          Profitez d'un nettoyage professionnel immédiat grâce à nos équipements modernes et notre <br/> expertise.</p>
-      <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
+      <button><a href="https://wa.me/21657244160">Contactez-Nous</a></button>
   </div>
 
   <div className="card">
@@ -72,7 +72,7 @@ const Service = () => {
       <p>Simplifiez-vous la vie avec un service de récupération et de livraison.
          Shoesvap nettoie vos chaussures avec soin et vous les retourne directement
          chez vous ou à votre bureau, sans effort de votre part.</p>
-      <button><a href="https://www.facebook.com/messages/t/146083786054011">Contactez-Nous</a></button>
+      <button><a href="https://wa.me/21657244160">Contactez-Nous</a></button>
   </div>
 
 </div>

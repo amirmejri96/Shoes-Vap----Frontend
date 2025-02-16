@@ -37,6 +37,10 @@ const lacets = () => {
             <p>6 TND</p>
         </div>
 
+        <div className='commander'>
+          <button><a href='https://wa.me/21657244160'>Commander</a></button>
+        </div>
+
     </div>
   )
 }
