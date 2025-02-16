@@ -1,0 +1,157 @@
+.flex {
+    display: flex;
+}
+
+.shampo {
+    background-image: url('../../../public/assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.shampo .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 4rem 0;
+}
+
+.shampo h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.937);
+    margin-bottom: 2rem;
+}
+
+.shampo .description {
+    text-align: left;
+    margin: 0 2rem;
+}
+
+.shampo .description h4 {
+    color: #2d3852;
+    text-shadow: 2px 2px 4px rgba(207, 207, 207, 0.937);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline #76d63f;
+}
+
+.shampo .description p {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.shampo .mode-emploi {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.shampo .mode-emploi h4 {
+    color: #2d3852;
+    text-shadow: 2px 2px 4px rgba(207, 207, 207, 0.937);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline #76d63f;
+}
+
+.shampo .mode-emploi p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.shampo .precaution {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.shampo .precaution h4 {
+    color: #2d3852;
+    text-shadow: 2px 2px 4px rgba(207, 207, 207, 0.937);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline #76d63f;
+}
+
+.shampo .precaution p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.shampo h5 {
+    text-align: center;
+    font-size: 1.3rem;
+    border: 3px solid #76d63f;
+    padding: 10px;
+    width: 85%;
+    margin: 2rem auto;
+    border-radius: 50px;
+}
+
+.shampo p {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.shampo .prix {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.shampo .prix p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    background-color: #76d63f;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.shampo .images-pack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width:600px) {
+    .shampo .images {
+        flex-direction: column;
+    }
+
+    .shampo .description p {
+        margin: 0;
+    }
+
+    .shampo .mode-emploi p {
+        margin: 0;
+    }
+
+    .shampo .precaution p {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:380px) {
+    .shampo .prix p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:860px) {
+    .shampo .images-pack {
+        flex-direction: column;
+    }
+}
