@@ -48,7 +48,8 @@
 
 .shampo .description p {
     font-size: 1.3rem;
-    color: black;
+    color: #fff;
+    line-height: 2rem;
 }
 
 .shampo .mode-emploi {
@@ -67,7 +68,7 @@
 .shampo .mode-emploi p{
     font-size: 1.3rem;
     line-height: 2rem;
-    color: black;
+    color: #fff;
 }
 
 .shampo .precaution {
@@ -86,7 +87,7 @@
 .shampo .precaution p{
     font-size: 1.3rem;
     line-height: 2rem;
-    color: black;
+    color: #fff;
 }
 
 .shampo h5 {
@@ -104,6 +105,7 @@
     margin-left: 2rem;
     margin-top: 2rem;
     font-size: 1.3rem;
+    color: #fff;
 }
 
 .shampo .prix {
@@ -119,6 +121,7 @@
     background-color: #76d63f;
     padding: 5px 20px;
     border-radius: 20px;
+    color: #2d3852;
 }
 
 .shampo .images-pack {
