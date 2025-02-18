@@ -12,18 +12,46 @@
     letter-spacing: 1px;
 }
 
+
+/* Styles pour Swiper */
 .shampo .images {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.shampo .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    padding: 4rem 0;
+    margin-top: 2rem;
 }
 
-.shampo .images img {
-    width: 15%;
+.shampo .swiper-slide img {
+    width: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
+
+/* Styles pour la pagination */
+.swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    background: #76d63f;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2d3852;
+}
+
 
 .shampo h2 {
     text-align: center;
@@ -126,20 +154,6 @@
     color: #2d3852;
 }
 
-.shampo .images-pack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 4rem 0;
-    flex-wrap: wrap;
-}
-
-.shampo .images-pack img {
-    width: 15%;
-    border-radius: 20px;
-}
-
 .shampo .commander {
     display: flex;
     justify-content: center;
@@ -164,11 +178,7 @@
     cursor: pointer;
 }
 
-@media (max-width:600px) {
-    .shampo .images {
-        flex-direction: column;
-    }
-
+@media (max-width:600px) { 
     .shampo .description p {
         margin: 0;
     }
@@ -190,26 +200,14 @@
 }
 
 @media (max-width:860px) {
-    .shampo .images-pack {
-        flex-direction: column;
-    }
-
-    .shampo .images-pack img {
-        width: 60%;
-    }
-
     .shampo .images img {
-        width: 60%;
+        width: 80%;
     }
 }
 
 @media (min-width:860px) and (max-width:1024px) {
     .shampo .images img {
-        width: 20%;
-    }
-
-    .shampo .images-pack img {
-        width: 20%;
+        width: 100%;
     }
 }
 
@@ -239,3 +237,5 @@
         line-height: 1.5rem;
     }
 }
+
+  

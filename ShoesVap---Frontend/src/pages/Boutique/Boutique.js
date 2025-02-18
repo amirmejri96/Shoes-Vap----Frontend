@@ -7,7 +7,7 @@ const Boutique = () => {
             <h1 style={{ textAlign: 'center', marginTop: '30px', color: 'white' }} >Bienvenue dans notre <br /> Boutique</h1>
             <div className="containers">
                 <div className="boxs"> <a href='/shampoo'>
-                    <img src="../../../assets/SHAMPO.jpg" alt="Produit 2" />
+                    <img src="../../../assets/shhampo1000.jpg" alt="Produit 2" />
                     <div className="description">
                         <h3>Shampoo Shoesvap</h3>
                         <p>Quantité : 150ml</p>
@@ -16,7 +16,7 @@ const Boutique = () => {
                 </div>
 
                 <div className="boxs"> <a href='/foam'>
-                    <img src="../../../assets/FOAM.jpg" alt="Produit 1" />
+                    <img src="../../../assets/foam 1000.jpg" alt="Produit 1" />
                     <div className="description">
                         <h3>Foam Shoesvap</h3>
                         <p>Quantité : 150ml</p>
@@ -25,7 +25,7 @@ const Boutique = () => {
                 </div>
 
                 <div className="boxs"> <a href='/white-renew'>
-                    <img src="../../../assets/WHITE.jpg" alt="Produit 3" />
+                    <img src="../../../assets/white1000.jpg" alt="Produit 3" />
                     <div className="description">
                         <h3>White Renew Shoesvap</h3>
                         <p>Quantité : 100ml</p>
@@ -34,7 +34,7 @@ const Boutique = () => {
                 </div>
 
                 <div className="boxs"> <a href='/sneakers-deo'>
-                    <img src="../../../assets/DUO.jpg" alt="Produit 4" />
+                    <img src="../../../assets/duo 1000.jpg" alt="Produit 4" />
                     <div className="description">
                         <h3>Sneakers Deo Shoesvap</h3>
                         <p>Quantité : 250ml</p>
@@ -43,7 +43,7 @@ const Boutique = () => {
                 </div>
 
                 <div className="boxs"> <a href='/pack'>
-                    <img src="../../../assets/PACK NEW.jpg" alt="Produit 4" />
+                    <img src="../../../assets/pack site 3 1000.jpg" alt="Produit 4" />
                     <div className="description">
                         <h3>Pack Total Care Shoesvap</h3>
                         <p>Tout ce dont vous avez besoin.</p>
