@@ -17,6 +17,7 @@ const Shampoo = () => {
 
   return (
     <div className="shampo">
+      <h2>Shampoo Shoesvap</h2>
       <div className="images">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -43,8 +44,6 @@ const Shampoo = () => {
           <img src={selectedImage} alt="Agrandie" className="modal-image" />
         </div>
       )}
-
-      <h2>Shampoo Shoesvap</h2>
 
       <div className="description">
         <h4>Description :</h4>

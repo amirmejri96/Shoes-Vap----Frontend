@@ -17,6 +17,7 @@ const Renew = () => {
 
   return (
     <div className="shampo">
+      <h2>White Renew Shoesvap</h2>
       <div className="images">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -44,7 +45,7 @@ const Renew = () => {
         </div>
       )}
 
-      <h2>White Renew Shoesvap</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>

@@ -19,6 +19,7 @@ const Pack = () => {
 
   return (
     <div className="shampo">
+      <h2>Pack Total Care Shoesvap</h2>
       <div className="images">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -46,7 +47,7 @@ const Pack = () => {
         </div>
       )}
 
-      <h2>Pack Total Care Shoesvap</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>

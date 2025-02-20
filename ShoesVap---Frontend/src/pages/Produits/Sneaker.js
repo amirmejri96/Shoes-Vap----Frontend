@@ -17,6 +17,7 @@ const Sneaker = () => {
 
   return (
     <div className="shampo">
+      <h2>Sneakers Deo Shoesvap</h2>
       <div className="images">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -44,7 +45,6 @@ const Sneaker = () => {
         </div>
       )}
 
-      <h2>Sneakers Deo Shoesvap</h2>
 
       <div className="description">
         <h4>Description :</h4>

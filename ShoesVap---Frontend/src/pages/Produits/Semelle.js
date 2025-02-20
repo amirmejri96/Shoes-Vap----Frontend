@@ -15,6 +15,7 @@ const Semelle = () => {
 
   return (
     <div className="shampo">
+      <h2>Semelles Orthopédiques</h2>
       {/* Slider Swiper pour afficher plusieurs images si besoin */}
       <div className="images">
         <Swiper
@@ -43,7 +44,7 @@ const Semelle = () => {
         </div>
       )}
 
-      <h2>Semelles Orthopédiques</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>

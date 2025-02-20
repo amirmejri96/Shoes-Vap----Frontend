@@ -17,6 +17,7 @@ const Lacets = () => {
 
   return (
     <div className="shampo">
+      <h2>Lacets en Coton 1M</h2>
       {/* Slider pour les images des lacets */}
       <div className="images">
         <Swiper
@@ -46,7 +47,7 @@ const Lacets = () => {
         </div>
       )}
 
-      <h2>Lacets en Coton 1M</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>

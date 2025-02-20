@@ -16,6 +16,7 @@ const AntiGlissoire = () => {
 
   return (
     <div className="shampo">
+      <h2>Anti-Glissoires</h2>
       {/* Slider pour les images */}
       <div className="images">
         <Swiper
@@ -45,7 +46,7 @@ const AntiGlissoire = () => {
         </div>
       )}
 
-      <h2>Anti-Glissoires</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>

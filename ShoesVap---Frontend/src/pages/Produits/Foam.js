@@ -17,6 +17,7 @@ const Foam = () => {
 
   return (
     <div className="shampo">
+      <h2>Foam Shoesvap</h2>
       {/* Slider pour les images */}
       <div className="images">
         <Swiper
@@ -46,7 +47,7 @@ const Foam = () => {
         </div>
       )}
 
-      <h2>Foam Shoesvap</h2>
+      
 
       <div className="description">
         <h4>Description :</h4>
