@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const AntiPlis = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/anti-plis.jpg", alt: "Anti plis blanc" },
+    { src: "../../../assets/anti-plis-noire.jpg", alt: "Anti plis noir" }
+  ];
+
   return (
     <div className="shampo">
-      {/* Slider Swiper pour les images */}
+      {/* Slider pour les images */}
       <div className="images">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -18,14 +25,25 @@ const AntiPlis = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/anti-plis.jpg" alt="Anti plis blanc" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/anti-plis-noire.jpg" alt="Anti plis noir" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {/* Modal pour agrandir l'image */}
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Anti-Plis pour Chaussures</h2>
 
@@ -68,3 +86,4 @@ const AntiPlis = () => {
 };
 
 export default AntiPlis;
+

@@ -93,7 +93,7 @@
     text-decoration: underline #76d63f;
 }
 
-.shampo .mode-emploi p{
+.shampo .mode-emploi p {
     font-size: 1.3rem;
     line-height: 2rem;
     color: #fff;
@@ -112,7 +112,7 @@
     text-decoration: underline #76d63f;
 }
 
-.shampo .precaution p{
+.shampo .precaution p {
     font-size: 1.3rem;
     line-height: 2rem;
     color: #fff;
@@ -178,7 +178,44 @@
     cursor: pointer;
 }
 
-@media (max-width:600px) { 
+
+.clickable-image {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto; /* Permet le défilement sur petits écrans */
+}
+
+.modal-image {
+    width: 80%; /* Ajuste la largeur sur tous les écrans */
+    max-width: 800px; /* Largeur maximale sur grands écrans */
+    max-height: 90vh; /* Empêche l'image de dépasser l'écran */
+    border-radius: 10px;
+    object-fit: contain; /* Évite les distorsions */
+}
+
+.modal:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
     .shampo .description p {
         margin: 0;
     }
@@ -238,4 +275,23 @@
     }
 }
 
-  
+@media (max-width: 768px) {
+    .modal-image {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-image {
+        width: 95%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modal-image {
+        width: 100%;
+        max-width: 350px;
+    }
+}

@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Lacets = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/lacets-blanc.jpg", alt: "Lacets Blanc" },
+    { src: "../../../assets/lacets-bleu-marine.jpg", alt: "Lacets Bleu Marine" },
+    { src: "../../../assets/lacets-noire.jpg", alt: "Lacets Noir" }
+  ];
+
   return (
     <div className="shampo">
       {/* Slider pour les images des lacets */}
@@ -18,17 +26,25 @@ const Lacets = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/lacets-blanc.jpg" alt="Lacets Blanc" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/lacets-bleu-marine.jpg" alt="Lacets Bleu Marine" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/lacets-noire.jpg" alt="Lacets Noir" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {/* Modal pour agrandir l'image */}
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Lacets en Coton 1M</h2>
 
@@ -71,3 +87,4 @@ const Lacets = () => {
 };
 
 export default Lacets;
+

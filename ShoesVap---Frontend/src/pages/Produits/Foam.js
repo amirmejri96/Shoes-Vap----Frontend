@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Foam = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/foam 1000.jpg", alt: "Foam 1" },
+    { src: "../../../assets/foam  site 2 1000.jpg", alt: "Foam 2" },
+    { src: "../../../assets/foam site 3 1000.jpg", alt: "Foam 3" }
+  ];
+
   return (
     <div className="shampo">
-      {/* Slider Swiper pour les images */}
+      {/* Slider pour les images */}
       <div className="images">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -18,17 +26,25 @@ const Foam = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/foam 1000.jpg" alt="Foam 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/foam  site 2 1000.jpg" alt="Foam 2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/foam site 3 1000.jpg" alt="Foam 3" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {/* Modal pour agrandir l'image */}
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Foam Shoesvap</h2>
 
@@ -81,3 +97,4 @@ const Foam = () => {
 };
 
 export default Foam;
+

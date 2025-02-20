@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import "./ProduitStyle.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Shampoo = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/shhampo1000.jpg", alt: "Shampoo_1" },
+    { src: "../../../assets/shampoo 1000 2.jpg", alt: "Shampoo_2" },
+    { src: "../../../assets/shampoo site 3 1000.jpg", alt: "Shampoo_3" },
+  ];
+
   return (
     <div className="shampo">
       <div className="images">
@@ -17,17 +25,24 @@ const Shampoo = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/shhampo1000.jpg" alt="Shampoo_1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/shampoo 1000 2.jpg" alt="Shampoo_2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/shampoo site 3 1000.jpg" alt="Shampoo_3" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Shampoo Shoesvap</h2>
 
@@ -80,3 +95,4 @@ const Shampoo = () => {
 };
 
 export default Shampoo;
+

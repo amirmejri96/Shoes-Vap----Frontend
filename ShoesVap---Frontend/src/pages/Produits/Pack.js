@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Pack = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/pack site 3 1000.jpg", alt: "Pack_1" },
+    { src: "../../../assets/shhampo1000.jpg", alt: "Pack_2" },
+    { src: "../../../assets/foam 1000.jpg", alt: "Pack_3" },
+    { src: "../../../assets/white1000.jpg", alt: "Pack_4" },
+    { src: "../../../assets/duo 1000.jpg", alt: "Pack_5" }
+  ];
+
   return (
     <div className="shampo">
       <div className="images">
@@ -17,23 +27,24 @@ const Pack = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/pack site 3 1000.jpg" alt="Pack_1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/shhampo1000.jpg" alt="Pack_2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/foam 1000.jpg" alt="Pack_3" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/white1000.jpg" alt="Pack_4" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/duo 1000.jpg" alt="Pack_5" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Pack Total Care Shoesvap</h2>
 
@@ -85,3 +96,4 @@ const Pack = () => {
 };
 
 export default Pack;
+

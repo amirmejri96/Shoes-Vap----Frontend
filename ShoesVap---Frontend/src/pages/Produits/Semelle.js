@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Semelle = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/semelle.jpg", alt: "Semelles Orthopédiques" }
+  ];
+
   return (
     <div className="shampo">
       {/* Slider Swiper pour afficher plusieurs images si besoin */}
@@ -18,12 +24,24 @@ const Semelle = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/semelle.jpg" alt="Semelles Orthopédiques" />
-          </SwiperSlide>
-          {/* Ajoutez d'autres images ici si nécessaire */}
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Semelles Orthopédiques</h2>
 
@@ -66,3 +84,4 @@ const Semelle = () => {
 };
 
 export default Semelle;
+

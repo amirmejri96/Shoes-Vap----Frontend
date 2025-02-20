@@ -1,32 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Sneaker = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/duo 1000.jpg", alt: "Sneakers_Deo_1" },
+    { src: "../../../assets/duo site 3 1000.jpg", alt: "Sneakers_Deo_2" },
+    { src: "../../../assets/duo3 site 3 1000.jpg", alt: "Sneakers_Deo_3" },
+  ];
+
   return (
     <div className="shampo">
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        className="images"
-      >
-        <SwiperSlide>
-          <img src="../../../assets/duo 1000.jpg" alt="Sneakers_Deo_1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="../../../assets/duo site 3 1000.jpg" alt="Sneakers_Deo_2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="../../../assets/duo3 site 3 1000.jpg" alt="Sneakers_Deo_3" />
-        </SwiperSlide>
-      </Swiper>
+      <div className="images">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>Sneakers Deo Shoesvap</h2>
 
@@ -79,3 +95,4 @@ const Sneaker = () => {
 };
 
 export default Sneaker;
+

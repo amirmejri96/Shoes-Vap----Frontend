@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import './ProduitStyle.css'
+import './ProduitStyle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Renew = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: "../../../assets/white1000.jpg", alt: "White_Renew_1" },
+    { src: "../../../assets/whie  site 3 1000.jpg", alt: "White_Renew_2" },
+    { src: "../../../assets/white 3 site 3 1000.jpg", alt: "White_Renew_3" }
+  ];
+
   return (
     <div className="shampo">
       <div className="images">
@@ -17,17 +25,24 @@ const Renew = () => {
           navigation
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <img src="../../../assets/white1000.jpg" alt="White_Renew_1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/whie  site 3 1000.jpg" alt="White_Renew_2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../../../assets/white 3 site 3 1000.jpg" alt="White_Renew_3" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => setSelectedImage(image.src)}
+                className="clickable-image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Agrandie" className="modal-image" />
+        </div>
+      )}
 
       <h2>White Renew Shoesvap</h2>
 
@@ -83,3 +98,4 @@ const Renew = () => {
 };
 
 export default Renew;
+
