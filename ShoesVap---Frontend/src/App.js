@@ -15,10 +15,17 @@ import AntiPlis from './pages/Produits/AntiPlis';
 import AntiGlissoire from './pages/Produits/AntiGlissoire';
 import Lacets from './pages/Produits/Lacets';
 import Semelle from './pages/Produits/Semelle';
+import ReactPixel from 'react-facebook-pixel';
 
 
 
+const options = {
+  autoConfig: true,
+  debug: true,
+};
 
+ReactPixel.init('853547203530041', options);
+ReactPixel.pageView();
 
 function App() {
   return (
